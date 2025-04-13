@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+    font-family: "NotoSans-bold";
+    src: url('/public/NotoSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "NotoSans-regular";
+    src: url('/public/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "NotoSans-medium";
+    src: url('/public/NotoSans-Medium.ttf');
+}
+
+@theme{
+    --font-noto-bold:'NotoSans-bold';
+    --font-noto-regular:'NotoSans-regular';
+    --font-noto-medium:'NotoSans-medium';
+}
+
+body{
+    font-family: var(--font-noto-regular);
+}
